@@ -9,12 +9,12 @@
     "clean": "farm clean"
   },
   "dependencies": {
-    "vue": "^3.4.0"
+    "vue": "3.2.25"
   },
   "devDependencies": {
     "@farmfe/cli": "1.0.2",
-    "@farmfe/core": "1.1.12",
-    "@vitejs/plugin-vue": "^5.0.4",
+    "@farmfe/core": "1.1.13",
+    "@vitejs/plugin-vue": "3.2.0",
     "core-js": "^3.30.1"
   }
 }
