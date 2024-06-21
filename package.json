@@ -2,19 +2,21 @@
   "name": "test",
   "version": "1.0.0",
   "scripts": {
-    "dev": "farm start",
+    "dev": "farm clean & farm start",
     "start": "farm start",
     "build": "farm build",
     "preview": "farm preview",
     "clean": "farm clean"
   },
   "dependencies": {
-    "vue": "3.2.25"
+    "vue": "3.2.25",
+    "vue-router": "^4.3.3"
   },
   "devDependencies": {
     "@farmfe/cli": "1.0.2",
-    "@farmfe/core": "1.1.13",
+    "@farmfe/core": "1.2.0",
     "@vitejs/plugin-vue": "3.2.0",
-    "core-js": "^3.30.1"
+    "core-js": "^3.30.1",
+    "prettier": "^3.3.2"
   }
 }
