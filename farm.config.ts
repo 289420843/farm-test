@@ -4,8 +4,14 @@ import path from "path";
 import fs from "fs";
 
 export default defineConfig({
+  server: {
+    port: 3005,
+  },
   compilation: {
     persistentCache: false,
+    output: {
+      format: "cjs",
+    },
     resolve: {
       alias: {
         ...Object.fromEntries(
@@ -16,9 +22,8 @@ export default defineConfig({
         ),
       },
     },
-    minify: {
-      exclude: ["\\.html"],
-    },
+    minify: false,
+    treeShaking: false,
   },
   vitePlugins: [vue()],
 });
