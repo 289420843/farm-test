@@ -6,10 +6,7 @@
     "start": "farm start",
     "build": "farm build",
     "preview": "farm preview",
-    "clean": "farm clean",
-    "api": "utils create-api",
-    "test": "tsx test",
-    "apiup": "utils create-api update"
+    "clean": "farm clean"
   },
   "dependencies": {
     "lodash": "^4.17.21",
