@@ -3,14 +3,16 @@ export const routes = [
     path: "/",
     name: "home",
     component: () => import("views/home.vue"),
-  },
-  {
-    path: "/finance",
     children: [
       {
-        path: "submitAccounts",
-        name: "test",
-        component: () => import("views/finance/submitAccounts/index.vue"),
+        path: "page1",
+        name: "page1",
+        component: () => import("views/page1.vue"),
+      },
+      {
+        path: "page2",
+        name: "page2",
+        component: () => import("views/page2.vue"),
       },
     ],
   },

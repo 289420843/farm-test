@@ -4,15 +4,28 @@ import path from "path";
 import fs from "fs";
 
 export default defineConfig({
-  server: {
-    port: 3005,
-  },
   compilation: {
+    input: {
+      index: "./index.html",
+      test: "./test.html",
+    },
     persistentCache: false,
-    output: {
-      format: "cjs",
+    runtime: {
+      isolate: true,
     },
     resolve: {
+      extensions: [
+        "vue",
+        "tsx",
+        "ts",
+        "d.ts",
+        "jsx",
+        "js",
+        "mjs",
+        "json",
+        "html",
+        "css",
+      ],
       alias: {
         ...Object.fromEntries(
           fs
