@@ -5,10 +5,6 @@ import fs from "fs";
 
 export default defineConfig({
   compilation: {
-    input: {
-      index: "./index.html",
-      test: "./test.html",
-    },
     persistentCache: false,
     runtime: {
       isolate: true,
@@ -36,7 +32,7 @@ export default defineConfig({
       },
     },
     minify: false,
-    treeShaking: false,
+    treeShaking: true,
   },
   vitePlugins: [vue()],
 });

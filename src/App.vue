@@ -1,6 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import test from "./chart/test.vue";
+
+</script>
+
 
 <template>
   app
-  <router-view />
+  <test/>
 </template>
