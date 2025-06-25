@@ -4,6 +4,5 @@ const test =require("./views/test22").default ;
 
 
 <template>
-  app
   <test/>
 </template>

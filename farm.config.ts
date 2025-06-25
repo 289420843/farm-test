@@ -1,7 +1,5 @@
 import { defineConfig } from "@farmfe/core";
 import vue from "@vitejs/plugin-vue";
-import VueJSX from "@vitejs/plugin-vue-jsx";
-import Require from "@bct-plugins/require/farm";
 import path from "path";
 import fs from "fs";
 
@@ -33,7 +31,5 @@ export default defineConfig({
       },
     },
   },
-  vitePlugins: [vue(),VueJSX()],
-  plugins:[
-    Require({ sourceIncludes: [/\.(svg|png|jpg|gif)$/] }),]
+  vitePlugins: [vue()],
 });
