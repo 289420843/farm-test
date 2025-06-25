@@ -1,14 +1,15 @@
 import { defineConfig } from "@farmfe/core";
 import vue from "@vitejs/plugin-vue";
+import VueJSX from "@vitejs/plugin-vue-jsx";
+import Require from "@bct-plugins/require/farm";
 import path from "path";
 import fs from "fs";
 
 export default defineConfig({
   compilation: {
     persistentCache: false,
-    runtime: {
-      isolate: true,
-    },
+    minify: false,
+    treeShaking: true,
     resolve: {
       extensions: [
         "vue",
@@ -31,8 +32,8 @@ export default defineConfig({
         ),
       },
     },
-    minify: false,
-    treeShaking: true,
   },
-  vitePlugins: [vue()],
+  vitePlugins: [vue(),VueJSX()],
+  plugins:[
+    Require({ sourceIncludes: [/\.(svg|png|jpg|gif)$/] }),]
 });

@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import test from "./chart/test.vue";
-
+const test =require("./views/test22").default ;
 </script>
 
 
